@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+nav {
+    display: flex;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+
+}
+.nav-buttons {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 30%;
+
+}
+.nav-buttons button{
+    cursor: pointer;
+    background-color: #c7f0ff;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    margin: 0 10px;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+    .Ligne {
+        position: relative;
+        border-left: 1px solid black;
+        height: 500px;
+        right: 0px;
+    }
+    .timer {
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        height: 90%;
+        width: 60%;
+    }
+
+    .options {
+        list-style: none;
+        padding: 0;
+        margin: 10px ;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .options li {
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius: 5px;
+        flex: 1;
+        border: none;
+        text-align: center;
+        width: 200px;
+        font-size: large;
+    }
+
+    .options li:hover {
+        background-color: #f1f1f1;;
+    }
+
+    .time {
+        font-size: 2em;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        margin: 20px 0;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        width: 200px;
+        height: 200px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .buttons button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        flex: 1;
+    }
+
+    .tasks-container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    .task {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .tasks-container button {
+        padding: 8px 12px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .tasks {
+        text-align: left;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .tasks-container li {
+        background: #eee;
+        margin: 5px 0;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    li.completed {
+        text-decoration: line-through;
+        color: gray;
+    }
+    .underlined {
+        text-decoration: underline;
+        font-weight: bold;
+        color: #4CAF50;
+    }

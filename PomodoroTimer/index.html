@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <audio id="alarm" src="audio/alarm.wav"></audio>
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h3>Pomodoro Timer</h3>
+            <div class="nav-buttons">
+                <button onclick="resetAll()"><strong>Reset Timer</strong></button>
+                <button onclick="customize()"><strong>Customize</strong></button>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="timer">
+                <ul class="options">
+                    <li id="work" onclick="worktime()">Work Session  &nbsp;&nbsp;0</li>
+                    <li id="short" onclick="shortbreak()">Short Break &nbsp;&nbsp;0</li>
+                    <li id="long" onclick="longbreak()">Long Break &nbsp;&nbsp;0</li>
+                </ul>
+                <div class="time">
+                    <span id="minutes">00</span>
+                    <span>:</span>
+                    <span id="seconds">03</span>
+                </div>
+                <div class="buttons">
+                    <button id="start" onclick="starttime()">Start</button>
+                    <button id="pause" onclick="stoptime()">Stop</button>
+                </div>
+            </div>
+            <div class="Ligne"></div>
+            <div class="tasks-container">
+                <h1>Tasks</h1>
+                <div class="task">
+                    <input type="text" id="task" placeholder="Enter your task">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <div class="tasks">
+                    <ul id="tasks"></ul>
+                </div>
+                <div class="task-counter">Total tasks: <span id="task-count">0</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
