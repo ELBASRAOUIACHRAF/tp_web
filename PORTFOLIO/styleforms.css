@@ -26,7 +26,7 @@ body {
 .login-box {
     position: absolute;
     width: 400px;
-    height: 500px;
+    height: 600px;
     background-color: #e0e0e0;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
@@ -35,7 +35,7 @@ body {
 .sign-box {
     position: absolute;
     width: 400px;
-    height: 500px;
+    height: 600px;
     background-color: #e0e0e0;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
@@ -45,11 +45,17 @@ body {
   
 form {
     width: 100%;
-    padding: 0 50px;
+    padding: 15px 50px;
     
 }
-  
-h2 {
+.login-box h2 {
+    padding:  95px 0 5px 0;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}  
+
+.sign-box h2 {
     padding:  35px 0 5px 0;
     font-size: 2em;
     color: rgb(0, 0, 0);
@@ -76,6 +82,28 @@ input {
     padding: 0 20px;
     transition: .5s ease;
 }
+#gen {
+  width: 100%;
+  border: 2px solid #2c4766;
+  border-radius: 40px;
+  padding: 10px 25px;
+}
+#gender {
+  border: 1px solid #2c4766;
+  border-radius: 40px;
+  padding: 5px 14px;
+  color: #626262;
+  cursor: pointer;
+}
+#image {
+  width: 100%;
+  border: 2px solid #2c4766;
+  border-radius: 40px;
+  padding: 15px 25px;
+  color: #626262;
+  cursor: pointer;
+}
+
 .forgot-pass {
     margin: -15px 0 10px;
     text-align: center;
