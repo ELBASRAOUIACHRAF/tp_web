@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Récupération des champs
         const firstName = document.querySelector("input[placeholder='First Name']");
         const lastName = document.querySelector("input[placeholder='Last Name']");
-        const gender = document.querySelector("input[placeholder='Gender']");
         const dob = document.querySelector("input[type='date']");
         const email = document.querySelector("input[type='email']");
         const phone = document.querySelector("input[placeholder='Phone number']");
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Expressions régulières
         const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ]{2,30}$/;
-        const genderRegex = /^(Male|Female)$/i;
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const phoneRegex = /^\d{10}$/;
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,20}$/;

@@ -25,7 +25,7 @@ body {
 
 .login-box {
     position: absolute;
-    width: 400px;
+    width: 470px;
     height: 600px;
     background-color: #e0e0e0;
     border-radius: 15px;
@@ -34,7 +34,7 @@ body {
 }
 .sign-box {
     position: absolute;
-    width: 400px;
+    width: 490px;
     height: 600px;
     background-color: #e0e0e0;
     border-radius: 15px;
