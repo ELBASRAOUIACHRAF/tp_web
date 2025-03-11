@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const lastName = document.querySelector("input[placeholder='Last Name']");
         const dob = document.querySelector("input[type='date']");
         const email = document.querySelector("input[type='email']");
-        const phone = document.querySelector("input[placeholder='Phone number']");
         const password = document.querySelector("input[placeholder='Password']");
         const confirmPassword = document.querySelector("input[placeholder='Confirm Password']");
         const image = document.getElementById("image");
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Expressions régulières
         const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ]{2,30}$/;
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        const phoneRegex = /^\d{10}$/;
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,20}$/;
         const imageRegex = /\.(jpg|jpeg|png|gif)$/i;
 
@@ -56,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
             isValid = false;
         }
         if (!validateField(email, emailRegex, "Veuillez entrer une adresse email valide.")) isValid = false;
-        if (!validateField(phone, phoneRegex, "Le numéro de téléphone doit contenir 10 chiffres.")) isValid = false;
         if (!validateField(password, passwordRegex, "Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre.")) isValid = false;
         if (confirmPassword.value !== password.value) {
             alert("Les mots de passe ne correspondent pas.");
